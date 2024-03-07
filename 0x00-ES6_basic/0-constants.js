@@ -1,14 +1,15 @@
-// Modified function
-function taskFirst() {
-    const a = 1;
-    console.log(a);
+export function taskFirst() {
+  const task = 'I prefer const when I can.';
+  return task;
 }
 
-taskFirst();
-
-function taskNext() {
-    let a = 1;
-    console.log(a);
+export function getLast() {
+  return ' is okay';
 }
 
-taskNext();
+export function taskNext() {
+  let combination = 'But sometimes let';
+  combination += getLast();
+
+  return combination;
+}
