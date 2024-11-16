@@ -1,10 +1,11 @@
 export default function taskBlock(trueOrFalse) {
-  let task = false;
-  let task2 = true;
+  const task = false;
+  const task2 = true;
 
   if (trueOrFalse) {
-    let task = true; // Scoped to the 'if' block
-    let task2 = false; // Scoped to the 'if' block
+    const innerTask = true; // Block-scoped variable for inner logic
+    const innerTask2 = false; // Block-scoped variable for inner logic
+    // These variables are not used but declared to demonstrate block scope
   }
 
   return [task, task2];
